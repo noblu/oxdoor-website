@@ -37,7 +37,7 @@
   }
 
   .select {
-    @apply hidden lg:flex  flex-1 outline-none border-solid border-4 border-pink p-3 rounded mx-5;
+    @apply hidden lg:flex flex-1 outline-none border-solid border-4 border-pink p-3 rounded mx-5;
   }
 
   .search {

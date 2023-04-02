@@ -17,13 +17,13 @@ const Navbar = () => {
       <div className="grid grid-cols-4 mt-6 ">
         {dataHQ.map((item, index) => (
           <div
-            className="col-span-1 flex items-center justify-center flex-col mr-4"
+            className="col-span-1 hover:block relative flex items-center justify-center flex-col mr-8 "
             key={index}
           >
             <img className="img-navbar" src={item.picture} alt="" />
-            {/* <button>
+            <button className="hidden absolute top-[40%] left-[50%] border-solid border-1 border-pink">
               <a href="#">Chi tiết</a>
-            </button> */}
+            </button>
             <div className="flex items-center justify-center flex-col mt-2">
               <span className="text-[20px] text-dark">{item.title}</span>
               <span className="text-[18px]">{item.text}</span>

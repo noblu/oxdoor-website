@@ -70,14 +70,14 @@ const Menu = () => {
                     x-transition:leave="transition ease-in duration-75"
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
-                    className="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg"
+                    className="absolute right-0 w-52 mt-2 origin-top-right rounded-md shadow-lg"
                   >
                     {isComponentVisible && (
                       <div className="py-1 bg-white rounded-md shadow-xs">
                         {Item.map((item, index) => (
                           <a
                             href="#"
-                            className="flex flex-row items-center px-4 py-2 text-sm text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100"
+                            className="flex flex-row items-center px-4 py-2 text-md text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100"
                             key={index}
                           >
                             {item.name}
@@ -141,14 +141,14 @@ const Menu = () => {
                     x-transition:leave="transition ease-in duration-75"
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
-                    className="absolute right-0 w-48 mt-2 origin-top-right rounded-md shadow-lg"
+                    className="absolute right-0 w-52 mt-2 origin-top-right rounded-md shadow-lg"
                   >
                     {isOpen && (
                       <div className="py-1 bg-white rounded-md shadow-xs">
                         {ItemCatallogue.map((item, index) => (
                           <a
                             href="#"
-                            className="flex flex-row items-center px-4 py-2 text-sm text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100"
+                            className="flex flex-row items-center px-4 py-2 text-md text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100"
                             key={index}
                           >
                             {item?.name}

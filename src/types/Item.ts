@@ -63,19 +63,19 @@ export const dataHQ = [
   {
     id: 1,
     picture: img1,
-    title: "Cửa nhựa Composite SBS DOOR",
+    title: "Cửa nhựa Composite OXDoor DOOR",
     text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
   },
   {
     id: 2,
     picture: img2,
-    title: "Cửa nhựa ABS Hàn Quốc",
+    title: "Cửa nhựa OXDoor Hàn Quốc",
     text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
   },
   {
     id: 3,
     picture: img3,
-    title: "Cửa nhựa G7 Kosdoor",
+    title: "Cửa nhựa OXDoor Kosdoor",
     text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
   },
   {
