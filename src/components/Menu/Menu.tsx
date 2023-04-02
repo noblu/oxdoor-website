@@ -145,7 +145,7 @@ const Menu = () => {
                   >
                     {isOpen && (
                       <div className="py-1 bg-white rounded-md shadow-xs">
-                        {ItemCatallogue.map((item: any, index) => (
+                        {ItemCatallogue.map((item, index) => (
                           <a
                             href="#"
                             className="flex flex-row items-center px-4 py-2 text-sm text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100"
@@ -191,9 +191,9 @@ const Menu = () => {
                   </span>
                 </div>
               </div>
-              {open == true && <MenuMoblie />}
             </div>
           </div>
+          {open === true && <MenuMoblie />}
         </div>
       </nav>
     </>

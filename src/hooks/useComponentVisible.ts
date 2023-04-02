@@ -22,7 +22,7 @@ export default function useComponentVisible(initialIsVisible: any) {
     return () => {
       document.removeEventListener("click", handleClickOutside, true);
     };
-  }, [isOpen, isComponentVisible, ref]);
+  }, [isOpen, isComponentVisible]);
 
   return { ref, isComponentVisible, setIsComponentVisible, isOpen, setIsOpen };
 }

@@ -1,22 +1,22 @@
 export const products = [
   {
     id: 1,
-    name: "Cửa Nhựa Dewoo",
+    name: "Cửa Nhựa OXDoor",
     link: "products/dewoo",
   },
   {
     id: 2,
-    name: "Cửa Nhựa Composite SBS",
+    name: "Cửa Nhựa Composite OXDoor",
     link: "products/sbsdoor",
   },
   {
     id: 3,
-    name: "Cửa Nhựa ABS Hàn Quốc",
+    name: "Cửa Nhựa OXDoor Hàn Quốc",
     link: "products/abs",
   },
   {
     id: 4,
-    name: "Cửa Nhựa G7 Kosdoor",
+    name: "Cửa Nhựa OXDoor Kosdoor",
     link: "products/kosdoor",
   },
   {

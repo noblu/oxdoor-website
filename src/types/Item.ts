@@ -4,7 +4,7 @@ interface ItemProp {
 }
 export const Item = [
   {
-    name: "Cửa nhựa Dewoo",
+    name: "Cửa nhựa OXDoor",
     link: "products/dewoo",
     // data: dataDW,
   },
@@ -14,12 +14,12 @@ export const Item = [
     // data: dataCP,
   },
   {
-    name: "Cửa nhựa ABS Hàn Quốc ",
+    name: "Cửa nhựa OXDoor Hàn Quốc ",
     link: "products/abs",
     // data: dataDW,
   },
   {
-    name: "Cửa nhựa G7 Kosdoor ",
+    name: "Cửa nhựa OXDoor Kosdoor ",
     link: "products/kosdoor",
     // data: dataCP,
   },
@@ -32,7 +32,7 @@ export const Item = [
 
 export const ItemCatallogue = [
   {
-    name: "Cửa nhựa Dewoo",
+    name: "Cửa nhựa OXDoor",
     link: "/catalogue/Dewoo",
   },
   {
@@ -40,12 +40,12 @@ export const ItemCatallogue = [
     link: "/catalogue/sbsdoor",
   },
   {
-    name: "Cửa nhựa ABS Hàn Quốc ",
+    name: "Cửa nhựa OXDoor Hàn Quốc ",
     link: "/catalogue/abs",
   },
   ,
   {
-    name: "Cửa nhựa G7 Kosdoor ",
+    name: "Cửa nhựa OXDoor Kosdoor ",
     link: "/catalogue/kosdoor",
   },
   ,
