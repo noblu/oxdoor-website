@@ -189,7 +189,6 @@ const Menu = () => {
                   <span className="text-xl">
                     Sản Phẩm Bền Đẹp, Vững Chắc Cho Ngôi Nhà Của Bạn
                   </span>
-                  022
                 </div>
               </div>
               {open == true && <MenuMoblie />}
