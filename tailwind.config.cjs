@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         primary: "#16405B",
         pink: "rgb(203,100,16)",
-        dark: "rgb(178,177,177)",
+        dark: "rgb(135,135,135)",
         black: "rgb(34,34,34)",
       },
       backgroundImage: {
