@@ -5,6 +5,6 @@ export const apiSlice = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "https://api-oxdoor-server.onrender.com/",
   }),
-  tagTypes: ["Post", "User"],
+  tagTypes: ["Post"],
   endpoints: (builder) => ({}),
 });

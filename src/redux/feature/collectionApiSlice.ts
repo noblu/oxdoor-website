@@ -1,24 +1,72 @@
 import { apiSlice } from '../api/apiSlice';
+export interface Door{
+
+}
+type PostsResponse = Door[];
 
 export const extendedApiSlice = apiSlice.injectEndpoints({
-    endpoints: (builder: { query: (arg0: { query: (() => string) | (() => string); transformResponse: ((responseData: any) => any) | ((responseData: any) => any); }) => any; }) => ({
-        getCollections: builder.query({
-        query: () =>
-        'marketplace/globalCollections?take=100&skip=0&category=collections',
-        transformResponse: (responseData: any) => responseData.items
-        }),
-       getNfts: builder.query({
-      query: () => 'marketplace/browse?category=nfts&take=100&skip=0',
-      transformResponse: (responseData: any) => {
-        const { items } = responseData;
-        const loadedNfts = items?.map((data: any) => {
-          // console.log(data, 'nft');
-          return data;
-        });
-        return loadedNfts;
-      },
-    })
-})
-})
+  endpoints: (build) => ({
+    getDoors: build.query<PostsResponse, void>({
+      query: () => "posts",
+      providesTags: (result) =>
+        result
+          ? [
+              ...result.map(({ id }: any) => ({ type: "Post" as const, id })),
+              { type: "Post", id: "LIST" },
+            ]
+          : [{ type: "Post", id: "LIST" }],
+    }),
 
-export const {useGetCollectionsQuery, useGetNftsQuery} =  extendedApiSlice
+    addDoor: build.mutation<Door, Partial<Door>>({
+      query: (body: any) => ({
+        url: "api/door",
+        method: "POST",
+        body,
+      }),
+      invalidatesTags: [{ type: "Post", id: "LIST" }],
+    }),
+
+    getDoor: build.query<Door, string>({
+      query: (id) => `posts/${id}`,
+      providesTags: (result, error, id) => [{ type: "Post", id }],
+    }),
+
+    // updateDoor: build.mutation<void, Pick<Door> & Partial<Door>>({
+    //   query: ({ id, ...patch }) => ({
+    //     url: `posts/${id}`,
+    //     method: "PUT",
+    //     body: patch,
+    //   }),
+    //   async onQueryStarted({ id, ...patch }, { dispatch, queryFulfilled }) {
+    //     const patchResult = dispatch(
+    //       apiSlice.util.updateQueryData("getDoor", id, (draft) => {
+    //         Object.assign(draft, patch);
+    //       })
+    //     );
+    //     try {
+    //       await queryFulfilled;
+    //     } catch {
+    //       patchResult.undo();
+    //     }
+    //   },
+    //   invalidatesTags: (result, error, { id }) => [{ type: "Post", id }],
+    // }),
+
+    deleteDoor: build.mutation<{ success: boolean; id: number }, number>({
+      query(id) {
+        return {
+          url: `posts/${id}`,
+          method: 'DELETE',
+        }
+      },
+      invalidatesTags: (result, error, id) => [{ type: 'Post', id }],
+    }),
+  }),
+  })
+
+export const {
+  useGetDoorQuery,
+  useGetDoorsQuery,
+  useAddDoorMutation,
+  // useUpdateDoorMutation,
+  useDeleteDoorMutation, } = extendedApiSlice;
