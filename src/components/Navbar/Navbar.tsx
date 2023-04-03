@@ -9,15 +9,19 @@ const Navbar = () => {
         <h4 className="text-[30px] text-primary">
           OXDoor – THẾ GIỚI CỬA NHỰA ĐÀ NẴNG
         </h4>
-        <span className="text-[20px] mt-2">
+        <span className="hidden lg:block text-[20px] mt-2">
           OXDoor – Cửa nhựa Đà Nẵng chuyên cung cấp các dòng cửa nội thất cao
           cấp, uy tín chất lượng, mang đến cho khách hàng sự hài lòng !
         </span>
+        <span className="hidden sm:block text-[20px] mt-2">
+          OXDoor – Cửa nhựa Đà Nẵng chuyên cung cấp các dòng cửa nội thất cao
+          cấp !
+        </span>
       </div>
-      <div className="grid grid-cols-4 mt-6 ">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 mt-6 ">
         {dataHQ.map((item, index) => (
           <div
-            className="col-span-1 hover:block relative flex items-center justify-center flex-col mr-8 "
+            className="col-span-1 hover:block relative flex items-center justify-center flex-col mr-8 mb-2"
             key={index}
           >
             <img className="img-navbar" src={item.picture} alt="" />

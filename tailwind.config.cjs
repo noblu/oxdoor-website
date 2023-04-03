@@ -11,6 +11,7 @@ module.exports = {
         pink: "rgb(203,100,16)",
         dark: "rgb(135,135,135)",
         black: "rgb(34,34,34)",
+        delay:"#4b9cdb"
       },
       backgroundImage: {
         "hero-pattern":
