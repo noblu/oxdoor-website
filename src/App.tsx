@@ -4,7 +4,9 @@ import Menu from "./components/Menu/Menu";
 import Navbar from "./components/Navbar/Navbar";
 import Slider from "./components/Slider/Slider";
 import Topbar from "./components/Topbar/Topbar";
+import Footer from "./pages/Footer";
 import Products from "./pages/Products";
+import Specifications from "./pages/Specifications";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Slider />
       <Navbar />
       <Products/>
+      <Specifications/>
+      <Footer/>
     </>
   );
 }
