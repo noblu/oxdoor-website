@@ -1,13 +1,12 @@
-import { apiSlice } from '../api/apiSlice';
-export interface Door{
-
-}
+import { apiSlice } from "../api/apiSlice";
+export interface Door {}
 type PostsResponse = Door[];
 
 export const extendedApiSlice = apiSlice.injectEndpoints({
   endpoints: (build) => ({
+    // api door
     getDoors: build.query<PostsResponse, void>({
-      query: () => "posts",
+      query: () => "abs/posts",
       providesTags: (result) =>
         result
           ? [
@@ -19,7 +18,7 @@ export const extendedApiSlice = apiSlice.injectEndpoints({
 
     addDoor: build.mutation<Door, Partial<Door>>({
       query: (body: any) => ({
-        url: "api/door",
+        url: "abs/post",
         method: "POST",
         body,
       }),
@@ -56,17 +55,18 @@ export const extendedApiSlice = apiSlice.injectEndpoints({
       query(id) {
         return {
           url: `posts/${id}`,
-          method: 'DELETE',
-        }
+          method: "DELETE",
+        };
       },
-      invalidatesTags: (result, error, id) => [{ type: 'Post', id }],
+      invalidatesTags: (result, error, id) => [{ type: "Post", id }],
     }),
   }),
-  })
+});
 
 export const {
   useGetDoorQuery,
   useGetDoorsQuery,
   useAddDoorMutation,
   // useUpdateDoorMutation,
-  useDeleteDoorMutation, } = extendedApiSlice;
+  useDeleteDoorMutation,
+} = extendedApiSlice;
