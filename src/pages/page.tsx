@@ -7,9 +7,9 @@ const page = () => {
         <div className="col-span-1">
           <img src={H1} alt="" />
         </div>
-        <div className='col-span-2 flex flex-col'>
-           <h4>Q #1</h4>
-           <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit!</span>
+        <div className="col-span-2 flex flex-col">
+          <h2 className="text-2xl italic ">Q #1</h2>
+          {/* <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit!</span> */}
         </div>
       </div>
     </>
