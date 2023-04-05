@@ -12,6 +12,7 @@ import SBSDoor from "../pages/components/SBSDoor";
 import ABS from "../pages/components/ABS";
 import Kosdoor from "../pages/components/Kosdoor";
 import Taiwan from "../pages/components/Taiwan";
+import UpFile from "../components/Updata/UpFile";
 
 export const MainRoutes = () => {
   const param = useParams();
@@ -89,6 +90,10 @@ export const MainRoutes = () => {
     {
       path: "price-quotation",
       element: <h1>báo giá</h1>,
+    },
+    {
+      path: "admin",
+      element: <UpFile />,
     },
   ]);
   return <RouterProvider router={router} />;

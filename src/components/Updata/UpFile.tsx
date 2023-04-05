@@ -127,7 +127,7 @@ const UpFile = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center flex-col h-full w-[500px]">
+    <div className="relative flex items-center justify-center flex-col h-full w-full">
       <h1 className="text-3xl m-4">UpFile</h1>
 
       <div className="m-4">
