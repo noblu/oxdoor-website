@@ -67,11 +67,7 @@ const UpFile = () => {
   return (
     <div className="relative flex items-center justify-center flex-col h-full w-[500px]">
       <h1 className="text-3xl m-4">UpFile</h1>
-      <form
-        className="flex items-center justify-center flex-col"
-        action=""
-        onSubmit={handleUpFile}
-      >
+     
         <div className="m-4">
           <select
             className="outline-none rounded border-solid border-2 border-pink p-1"
@@ -136,12 +132,11 @@ const UpFile = () => {
           </div>
         </div>
         <button
-          type="submit"
-          className="bg-pink py-[10px] px-[30px] m-2 rounded text-white text-2xl"
+          className="bg-pink py-[10px] px-[30px] m-2 rounded text-white text-2xl" onClick={handleUpFile}
         >
           UpFile
         </button>
-      </form>
+     
     </div>
   );
 };

@@ -12,15 +12,15 @@ import Specifications from "./pages/Specifications";
 function App() {
   return (
     <>
-      {/* <Home /> */}
-      <Topbar />
+      <Home />
+      {/* <Topbar />
       <Content />
       <Menu />
       <Slider />
       <Navbar />
       <Products />
       <Specifications />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
