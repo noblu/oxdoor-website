@@ -19,12 +19,12 @@ export const Item = [
     // data: dataCP,
   },
   {
-    name: "Cửa nhựa OXDoor Hàn Quốc ",
+    name: "Cửa nhựa OXDoor Hàn Quốc",
     link: "products/abs",
     // data: dataDW,
   },
   {
-    name: "Cửa nhựa OXDoor Kosdoor ",
+    name: "Cửa nhựa OXDoor Kosdoor",
     link: "products/kosdoor",
     // data: dataCP,
   },
