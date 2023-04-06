@@ -4,7 +4,7 @@ import Select from "../Select/Select";
 
 const Search = () => {
   return (
-    <div className=" col-span-2 lg:col-span-4">
+    <div className=" col-span-1 md:col-span-2 lg:col-span-4">
       <div className="lg:flex">
         <Select />
         <div className="search">

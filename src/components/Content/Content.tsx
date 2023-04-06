@@ -5,7 +5,7 @@ import Selcet from "../Select/Select";
 
 const Content = () => {
   return (
-    <div className="grid grid-cols-3 lg:grid-cols-5 items-center h-24">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center h-24">
       <Logo />
       <Search />
     </div>
