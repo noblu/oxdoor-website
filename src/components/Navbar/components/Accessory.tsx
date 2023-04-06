@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import PK from "../../../assets/phụ-kiện-bếp/PK1.jpeg";
 const Accessory = () => {
   return (
@@ -12,7 +12,7 @@ const Accessory = () => {
           nội thất cao cấp, uy tín chất lượng, mang đến cho khách hàng sự hài
           lòng !
         </span>
-        <span className="hidden sm:block text-[20px] mt-2">
+        <span className="hidden sm:block text-[20px]">
           OXDoor – Phụ kiện Đà Nẵng chuyên cung cấp các dòng phụ kiện nội thất
           cao cấp !
         </span>
@@ -20,7 +20,7 @@ const Accessory = () => {
       <div className="grid lg:grid-cols-4 md:grid-cols-2 mt-6 ">
         {/* {dataHQ.map((item, index) => ( */}
         <div
-          className="col-span-1 hover:block relative flex items-center justify-center flex-col mr-8 mb-2"
+          className="col-span-1 hover:block relative flex items-center justify-center flex-col m-2"
           // key={index}
         >
           <img className="img-navbar" src={PK} alt="" />
@@ -75,6 +75,6 @@ const Accessory = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Accessory
+export default Accessory;
