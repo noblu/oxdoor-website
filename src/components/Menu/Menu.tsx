@@ -11,7 +11,7 @@ import {
   BiMenu,
   BiPurchaseTagAlt,
   BiRectangle,
-  BiX
+  BiX,
 } from "react-icons/all";
 import MenuMoblie from "./MenuMoblie";
 
@@ -25,7 +25,7 @@ const Menu = () => {
     <>
       <nav className=" bg-pink">
         <div className="container px-6 mx-auto md:px-8">
-          <div className="flex items-center justify-start lg:justify-center h-16">
+          <div className="flex items-center justify-start md:justify-center lg:justify-center h-16">
             <div className="hidden md:block">
               <div className="flex items-center justify-between">
                 <Link
@@ -168,10 +168,10 @@ const Menu = () => {
             {/* mobile */}
             <div className="md:hidden">
               <div className="flex items-center justify-between w-full">
-                <div>
+                <div className="mt-1">
                   <button
                     onClick={() => setOpen(!open)}
-                    className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+                    className="inline-flex items-center justify-center pr-2 md:pr-8 lg:p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
                     x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
                     x-bind:aria-expanded="open"
                   >
@@ -183,7 +183,7 @@ const Menu = () => {
                   </button>
                 </div>
                 <div>
-                  <span className="text-xl">
+                  <span className="text-[16px] md:text-[24px] lg:text-xl">
                     Sản Phẩm Bền Đẹp, Vững Chắc Cho Ngôi Nhà Của Bạn
                   </span>
                 </div>
