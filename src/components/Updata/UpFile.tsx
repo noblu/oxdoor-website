@@ -3,8 +3,7 @@ import Image from "../../assets/logo-img.jpg";
 import { Item } from "../../types/Item";
 import { client, subdomain } from "../../utils/ipfs";
 import {
-  useAddNewPostMutation,
-  useGetPostsQuery,
+  useAddNewPostMutation
 } from "../../redux/feature/absApiSlice";
 import { OpenNotification } from "../OpenNotification/OpenNotification";
 import { useAddNewDewooMutation } from "../../redux/feature/dewooApiSlice";
@@ -21,12 +20,10 @@ import {
 import { MutationTrigger } from "@reduxjs/toolkit/dist/query/react/buildHooks";
 
 const UpFile = () => {
-  // const { data } = useGetPostsQuery("getPosts");
-  // console.log(data, "data");
 
+  const [text, setText] = useState("Example Name: OX");
   const [image, setImage] = useState("");
   const [product, setProduct] = useState("");
-  // console.log(product, "product");
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -49,7 +46,7 @@ const UpFile = () => {
       });
       const url = `${subdomain}/ipfs/${added.path}`;
       client.pin.add(added.path).then((res: any) => {
-        console.log(url, "url");
+        // console.log(url, "url");
         setImage(url);
       });
     } catch (error) {
@@ -85,14 +82,19 @@ const UpFile = () => {
 
   if (product === "Cửa nhựa OXDoor") {
     addDoor = addAbs;
+    // setText("Example Name: ODW #1");
   } else if (product === "Cửa nhựa Composite SBSDOOR") {
     addDoor = addDewoo;
+    // setText("OSBS #1");
   } else if (product === "Cửa nhựa OXDoor Hàn Quốc") {
     addDoor = addKos;
+    //  setText("OHQ #1");
   } else if (product === "Cửa nhựa OXDoor Kosdoor") {
     addDoor = addSbs;
+    // setText("OKOS #1");
   } else {
     addDoor = addTaiwan;
+    // setText("OTW #1");
   }
 
   const handleName = (event: any) => {
@@ -108,13 +110,11 @@ const UpFile = () => {
     if (!title || !description || !image) return;
 
     try {
-      // console.log(title, description, image, "rrrrrrrrrr");
-      const added = await addDoor({
+     await addDoor({
         image,
         title,
         description,
       }).unwrap();
-      console.log(added, "path");
       setImage("");
       setDescription("");
       setTitle("");
@@ -171,7 +171,7 @@ const UpFile = () => {
         value={title}
         type="text"
         className="outline-none rounded border-solid border-2 border-pink p-1 m-4 w-[200px]"
-        placeholder="Example Name: Q #1"
+        placeholder={`${text}`}
         onChange={handleName}
       />
 

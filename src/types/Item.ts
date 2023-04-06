@@ -3,35 +3,32 @@ import img2 from "../assets/cửa-nhựa-ABS-hàn-quốc/h2.jpg";
 import img3 from "../assets/cửa-nhựa-ABS-hàn-quốc/h5.jpg";
 import img4 from "../assets/cửa-nhựa-ABS-hàn-quốc/h6.jpg";
 
-interface ItemProp {
-  name: string;
-  link: string;
-}
+
 export const Item = [
   {
     name: "Cửa nhựa OXDoor",
     link: "products/dewoo",
-    // data: dataDW,
+    // text: "ODW",
   },
   {
     name: "Cửa nhựa Composite SBSDOOR",
     link: "products/sbsdoor",
-    // data: dataCP,
+    // text: "OSBS",
   },
   {
     name: "Cửa nhựa OXDoor Hàn Quốc",
     link: "products/abs",
-    // data: dataDW,
+    // text: "OHQ",
   },
   {
     name: "Cửa nhựa OXDoor Kosdoor",
     link: "products/kosdoor",
-    // data: dataCP,
+    // text: "OKOS",
   },
   {
     name: "Cửa nhựa Đài Loan ",
     link: "products/dai-loan",
-    // data: dataDL,
+    // text: "OTW",
   },
 ];
 

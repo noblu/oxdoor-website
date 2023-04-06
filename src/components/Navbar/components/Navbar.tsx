@@ -1,5 +1,5 @@
 import React from "react";
-import { dataHQ } from "../../types/Item";
+import { dataHQ } from "../../../types/Item";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

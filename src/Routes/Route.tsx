@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
-  useNavigate,
   useParams,
-  useRoutes,
 } from "react-router-dom";
 import Home from "../pages/Home";
 import Dewoo from "../pages/components/Dewoo";
@@ -13,10 +11,14 @@ import ABS from "../pages/components/ABS";
 import Kosdoor from "../pages/components/Kosdoor";
 import Taiwan from "../pages/components/Taiwan";
 import UpFile from "../components/Updata/UpFile";
+import Kitchen from "../components/Navbar/components/Kitchen";
+import Accessory from "../components/Navbar/components/Accessory";
+import PlasticSheet from "../components/Navbar/components/PlasticSheet";
+import Layout from "../components/Navbar/Layout";
+import Navbar from "../components/Navbar/components/Navbar";
 
 export const MainRoutes = () => {
   const param = useParams();
-  console.log(param, "param");
   const router = createBrowserRouter([
     {
       path: "/",
@@ -42,46 +44,32 @@ export const MainRoutes = () => {
           path: "products/dai-loan",
           element: <Taiwan />,
         },
+        {
+          path:'/',
+          element: <Layout />,
+          children: [
+        {
+          path: "",
+          element: <Navbar />,
+        },
+        {
+          path: "types/kitchen",
+          element: <Kitchen />,
+        },
+        {
+          path: "types/plasticsheet",
+          element: <PlasticSheet />,
+        },
+        {
+          path: "types/accessory",
+          element: <Accessory />,
+        },
       ],
     },
-    // {
-    //   path: "kitchen",
-    //   element: <Kitchen />,
-    // },
-    // {
-    //   path: "sheet",
-    //   element: <Sheet />,
-    // },
-    // {
-    //   path: "accessory",
-    //   element: <Accessory />,
-    // },
-    // {
-    //   path: "catalogue",
-    //   element: <Accessory />,
-    //   children: [
-    //     {
-    //       path: "catalogue/Dewoo",
-    //       element: <Accessory />,
-    //     },
-    //     {
-    //       path: "catalogue/sbsdoo",
-    //       element: <Accessory />,
-    //     },
-    //     {
-    //       path: "catalogue/abs",
-    //       element: <Accessory />,
-    //     },
-    //     {
-    //       path: "catalogue/kosdoor",
-    //       element: <Accessory />,
-    //     },
-    //     {
-    //       path: "catalogue/door",
-    //       element: <Accessory />,
-    //     },
-    //   ],
-    // },
+      ],
+      
+    },
+   
     {
       path: "picture",
       element: <h1>picture</h1>,
