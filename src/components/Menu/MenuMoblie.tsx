@@ -74,27 +74,27 @@ const MenuMoblie = () => {
             )}
           </div>
         </div>
-        <a
-          href="#"
+        <Link
+          to="#"
           className="flex flex-row items-center px-3 py-2 mt-1 text-base font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
         >
           <BiDice6 className="text-white" />
           <span className="ml-2">TỦ BẾP NHỰA</span>
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="#"
           className="flex flex-row items-center px-3 py-2 mt-1 text-base font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
         >
           <BiRectangle className="text-white" />
           <span className="ml-2">TẤM ỐP NHỰA</span>
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="#"
           className="flex flex-row items-center px-3 py-2 mt-1 text-base font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
         >
           <BiLayer className="text-white" />
           <span className="ml-2">PHỤ KIỆN</span>
-        </a>
+        </Link>
         <div className="relative" ref={ref}>
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -129,26 +129,26 @@ const MenuMoblie = () => {
             {isOpen && (
               <div className="py-1 bg-white rounded-md shadow-xs">
                 {ItemCatallogue.map((item, index) => (
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="flex flex-row items-center px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-200 focus:outline-none focus:text-gray-900 focus:bg-gray-200"
                     role="menuitem"
                     key={index}
                   >
                     {item?.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             )}
           </div>
         </div>
-        <a
-          href="#"
+        <Link
+          to="#"
           className="flex flex-row items-center px-3 py-2 mt-1 text-base font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
         >
           <BiPurchaseTagAlt className="text-white" />
           <span className="ml-2">BÁO GIÁ</span>
-        </a>
+        </Link>
       </div>
     </>
   );

@@ -3,7 +3,6 @@ import img2 from "../assets/cửa-nhựa-ABS-hàn-quốc/h2.jpg";
 import img3 from "../assets/cửa-nhựa-ABS-hàn-quốc/h5.jpg";
 import img4 from "../assets/cửa-nhựa-ABS-hàn-quốc/h6.jpg";
 
-
 export const Item = [
   {
     name: "Cửa nhựa OXDoor",
@@ -34,26 +33,21 @@ export const Item = [
 
 export const ItemCatallogue = [
   {
-    name: "Cửa nhựa OXDoor",
+    name: "Cửa Nhựa Vân Gổ OXDoor",
     link: "/catalogue/Dewoo",
   },
   {
-    name: "Cửa nhựa Composite SBSDOOR",
+    name: "Cửa Nhựa Composite OXDoor",
     link: "/catalogue/sbsdoor",
   },
   {
-    name: "Cửa nhựa OXDoor Hàn Quốc ",
+    name: "Cửa Nhựa Abs Hàn Quốc OXDoor ",
     link: "/catalogue/abs",
   },
   ,
   {
-    name: "Cửa nhựa OXDoor Kosdoor ",
+    name: "Cửa Nhựa Đài Loan OXDoor ",
     link: "/catalogue/kosdoor",
-  },
-  ,
-  {
-    name: "Cửa nhựa Đài Loan ",
-    link: "/catalogue/door",
   },
 ];
 export const dataHQ = [
