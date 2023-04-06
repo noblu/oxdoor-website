@@ -192,3 +192,237 @@ export const kitchens = [
     text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
   },
 ];
+
+/*****PlasticSheet*****/
+
+import PS1 from "../assets/tấm-ốp/ps1.jpg";
+import PS2 from "../assets/tấm-ốp/ps2.jpg";
+import PS3 from "../assets/tấm-ốp/ps3.jpg";
+import PS4 from "../assets/tấm-ốp/ps4.jpg";
+import PS5 from "../assets/tấm-ốp/ps5.jpg";
+import PS6 from "../assets/tấm-ốp/ps6.jpg";
+import PS7 from "../assets/tấm-ốp/ps7.jpg";
+import PS8 from "../assets/tấm-ốp/ps8.jpg";
+import PS9 from "../assets/tấm-ốp/ps9.jpg";
+import PS10 from "../assets/tấm-ốp/ps10.jpg";
+import PS11 from "../assets/tấm-ốp/ps11.jpg";
+import PS12 from "../assets/tấm-ốp/ps12.jpg";
+import PS13 from "../assets/tấm-ốp/ps13.jpg";
+import PS14 from "../assets/tấm-ốp/ps14.jpg";
+import PS15 from "../assets/tấm-ốp/ps15.jpg";
+import PS16 from "../assets/tấm-ốp/ps16.jpg";
+import PS17 from "../assets/tấm-ốp/ps17.jpg";
+import PS18 from "../assets/tấm-ốp/ps18.jpg";
+import PS19 from "../assets/tấm-ốp/ps19.jpg";
+import PS20 from "../assets/tấm-ốp/ps20.jpg";
+import PS21 from "../assets/tấm-ốp/ps21.jpg";
+import PS22 from "../assets/tấm-ốp/ps22.jpg";
+// import PS23 from "../assets/tấm-ốp/ps23.jpg";
+import PS23 from "../assets/tấm-ốp/ps24.jpg";
+import PS24 from "../assets/tấm-ốp/ps25.jpg";
+import PS25 from "../assets/tấm-ốp/ps26.jpg";
+import PS26 from "../assets/tấm-ốp/ps27.jpg";
+import PS27 from "../assets/tấm-ốp/ps28.jpg";
+import PS28 from "../assets/tấm-ốp/ps29.jpg";
+import PS29 from "../assets/tấm-ốp/ps30.jpg";
+// import PS31 from "../assets/tấm-ốp/ps31.jpg";
+import PS30 from "../assets/tấm-ốp/ps32.jpg";
+import PS31 from "../assets/tấm-ốp/ps33.jpg";
+import PS32 from "../assets/tấm-ốp/ps34.jpg";
+
+export const PlasticSheets = [
+  {
+    id: 1,
+    picture: PS1,
+    title: "OPS #1",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 2,
+    picture: PS2,
+    title: "OPS #2",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 3,
+    picture: PS3,
+    title: "OPS #3",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 4,
+    picture: PS4,
+    title: "OPS #4",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 5,
+    picture: PS5,
+    title: "OPS #5",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 6,
+    picture: PS6,
+    title: "OPS #6",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 7,
+    picture: PS7,
+    title: "OPS #7",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 8,
+    picture: PS8,
+    title: "OPS #8",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 9,
+    picture: PS9,
+    title: "OPS #9",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 10,
+    picture: PS10,
+    title: "OPS #10",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 11,
+    picture: PS11,
+    title: "OPS #11",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 12,
+    picture: PS12,
+    title: "OPS #12",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 13,
+    picture: PS13,
+    title: "OPS #13",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 14,
+    picture: PS14,
+    title: "OPS #14",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 15,
+    picture: PS15,
+    title: "OPS #15",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 16,
+    picture: PS16,
+    title: "OPS #16",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 17,
+    picture: PS17,
+    title: "OPS #17",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 18,
+    picture: PS18,
+    title: "OPS #18",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 19,
+    picture: PS19,
+    title: "OPS #19",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 20,
+    picture: PS20,
+    title: "OPS #20",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 21,
+    picture: PS21,
+    title: "OPS #21",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 22,
+    picture: PS22,
+    title: "OPS #22",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+
+  {
+    id: 23,
+    picture: PS23,
+    title: "OPS #23",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 24,
+    picture: PS24,
+    title: "OPS #24",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 25,
+    picture: PS25,
+    title: "OPS #25",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 26,
+    picture: PS26,
+    title: "OPS #26",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 27,
+    picture: PS27,
+    title: "OPS #27",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 28,
+    picture: PS28,
+    title: "OPS #28",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 29,
+    picture: PS29,
+    title: "OPS #29",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+
+  {
+    id: 30,
+    picture: PS30,
+    title: "OPS #30",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 31,
+    picture: PS31,
+    title: "OPS #31",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 32,
+    picture: PS32,
+    title: "OPS #32",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+];
