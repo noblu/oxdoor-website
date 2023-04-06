@@ -17,7 +17,6 @@ import UpFile from "../components/Updata/UpFile";
 export const MainRoutes = () => {
   const param = useParams();
   console.log(param, "param");
-  const arrayProduct = () => {};
   const router = createBrowserRouter([
     {
       path: "/",

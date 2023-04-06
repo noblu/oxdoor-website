@@ -11,10 +11,7 @@ import {
   BiMenu,
   BiPurchaseTagAlt,
   BiRectangle,
-  BiX,
-  GrCatalog,
-  GrClose,
-  IoPricetagsOutline,
+  BiX
 } from "react-icons/all";
 import MenuMoblie from "./MenuMoblie";
 
@@ -31,13 +28,13 @@ const Menu = () => {
           <div className="flex items-center justify-start lg:justify-center h-16">
             <div className="hidden md:block">
               <div className="flex items-center justify-between">
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="flex flex-row items-center px-3 py-2 text-sm font-medium text-white rounded-md focus:outline-none focus:text-white focus:bg-gray-700"
                 >
                   <BiHomeAlt className="text-white" />
                   <span className="ml-2">TRANG CHỦ</span>
-                </a>
+                </Link>
 
                 <div className="relative z-10" ref={ref}>
                   <button
@@ -75,41 +72,41 @@ const Menu = () => {
                     {isComponentVisible && (
                       <div className="py-1 bg-white rounded-md shadow-xs">
                         {Item.map((item, index) => (
-                          <a
-                            href="#"
+                          <Link
+                            to={item.link}
                             className="flex flex-row items-center px-4 py-2 text-md text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100"
                             key={index}
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     )}
                   </div>
                 </div>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="flex flex-row items-center px-3 py-2 ml-4 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
                 >
                   <BiDice6 className="text-white" />
                   <span className="ml-2">TỦ BẾP NHỰA</span>
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="flex flex-row items-center px-3 py-2 ml-4 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
                 >
                   <BiRectangle className="text-white" />
                   <span className="ml-2">TẤM ỐP NHỰA</span>
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="flex flex-row items-center px-3 py-2 ml-4 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
                 >
                   <BiLayer className="text-white" />
                   <span className="ml-2">PHỤ KIỆN</span>
-                </a>
+                </Link>
                 <div className="hidden relative z-10 lg:block" ref={ref}>
                   <button
                     onClick={() => setIsOpen(!isOpen)}
@@ -146,25 +143,25 @@ const Menu = () => {
                     {isOpen && (
                       <div className="py-1 bg-white rounded-md shadow-xs">
                         {ItemCatallogue.map((item, index) => (
-                          <a
-                            href="#"
+                          <Link
+                            to="#"
                             className="flex flex-row items-center px-4 py-2 text-md text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100"
                             key={index}
                           >
                             {item?.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     )}
                   </div>
                 </div>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="hidden lg:flex flex-row items-center px-3 py-2 ml-4 text-sm font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
                 >
                   <BiPurchaseTagAlt className="text-white" />
                   <span className="ml-2">BÁO GIÁ</span>
-                </a>
+                </Link>
               </div>
             </div>
 

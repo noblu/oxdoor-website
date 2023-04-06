@@ -12,7 +12,9 @@ module.exports = {
         dark: "rgb(135,135,135)",
         black: "rgb(34,34,34)",
         delay:"#4b9cdb",
-        white:"#ccc"
+        white:"#ccc",
+        callAction:"#5eebdd",
+        ping:'#222'
       },
       backgroundImage: {
         "hero-pattern":
@@ -22,6 +24,16 @@ module.exports = {
       zIndex: {
         999: "999",
       },
+      animation:{
+          wiggle: 'load 1.5s ease-out infinite'
+      },
+      keyframes: {
+        load: {
+           '0%': {background: '#ccc',border:'0px solid #fff'},
+	         '50%':{background: '#ccc',border: '20px solid rgb(203,100,16)'},
+           '100%':{background: '#ccc',border: '0px solid rgb(203,100,16)'}
+        }
+      }
     },
   },
   plugins: [],

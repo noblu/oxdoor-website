@@ -72,4 +72,14 @@ export const dataDL = [
     picture: image4,
     title: "Q #8",
   },
+  {
+    id: 9,
+    picture: image4,
+    title: "Q #9",
+  },
+  {
+    id: 10,
+    picture: image4,
+    title: "Q #10",
+  },
 ];

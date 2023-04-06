@@ -8,6 +8,7 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import Products from "./Products";
 import Footer from "./Footer";
 import Collapsible from "../components/CollapsiblePanel/Collapsible";
+import CallAction from "../components/CallAction/CallAction";
 
 const Home = () => {
   return (

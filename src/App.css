@@ -82,4 +82,7 @@
   .l-10 {
     @apply delay-[1.56s] text-delay
   }
+  .ping {
+    @apply flex items-center justify-center bg-white w-[150px] h-[60px] rounded-full border-solid border-[2px] animate-wiggle
+  }
 }
