@@ -44,7 +44,7 @@
     @apply flex-1  outline-none border-solid border-4 border-pink p-1 mr-2 lg:mr-4 rounded flex items-center;
   }
   .img-navbar {
-    @apply w-[400px] h-[500px] rounded object-cover translate-x-1;
+    @apply w-[400px] h-[500px] rounded object-cover translate-x-1 mr-2;
   }
   .load-wrapp {
     @apply float-left w-full h-[100px] p-[20px] rounded text-center bg-transparent;
