@@ -93,6 +93,16 @@ import Kit13 from "../assets/tụ-bếp-nhựa/TB13.jpg";
 import Kit14 from "../assets/tụ-bếp-nhựa/TB14.jpg";
 import Kit15 from "../assets/tụ-bếp-nhựa/TB15.jpg";
 import Kit16 from "../assets/tụ-bếp-nhựa/TB16.jpg";
+import Kit17 from "../assets/tụ-bếp-nhựa/T1.jpg";
+import Kit18 from "../assets/tụ-bếp-nhựa/T2.jpg";
+import Kit19 from "../assets/tụ-bếp-nhựa/T3.jpg";
+import Kit20 from "../assets/tụ-bếp-nhựa/T4.jpg";
+import Kit21 from "../assets/tụ-bếp-nhựa/T5.jpg";
+import Kit22 from "../assets/tụ-bếp-nhựa/T6.jpg";
+import Kit23 from "../assets/tụ-bếp-nhựa/T7.jpg";
+import Kit24 from "../assets/tụ-bếp-nhựa/T8.jpg";
+import Kit25 from "../assets/tụ-bếp-nhựa/T9.jpg";
+import Kit26 from "../assets/tụ-bếp-nhựa/T10.jpg";
 
 export const kitchens = [
   {
@@ -189,6 +199,66 @@ export const kitchens = [
     id: 16,
     picture: Kit16,
     title: "OKT #16",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 17,
+    picture: Kit17,
+    title: "OKT #17",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 18,
+    picture: Kit18,
+    title: "OKT #18",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 19,
+    picture: Kit19,
+    title: "OKT #19",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 20,
+    picture: Kit20,
+    title: "OKT #20",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 21,
+    picture: Kit21,
+    title: "OKT #21",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 22,
+    picture: Kit22,
+    title: "OKT #22",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 23,
+    picture: Kit23,
+    title: "OKT #23",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 24,
+    picture: Kit24,
+    title: "OKT #24",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 25,
+    picture: Kit25,
+    title: "OKT #25",
+    text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
+  },
+  {
+    id: 26,
+    picture: Kit26,
+    title: "OKT #26",
     text: "Sản phẩm bền đẹp, vững chắc cho ngôi nhà của Bạn.",
   },
 ];

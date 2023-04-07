@@ -1,8 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import img1 from "../../assets/imgslide/farmhouse-front-door-ideas-featured-homebnc-v2.jpg";
-import img2 from "../../assets/imgslide/open-entry-door.jpg";
-import img4 from "../../assets/imgslide/Teak-wood.jpg";
-import img5 from "../../assets/imgslide/Untitled-1-Recovered-Recovered-kjnjk-scaled.jpg";
+import img1 from "../../assets/slider/TB4.jpg";
+import img2 from "../../assets/slider/TB5.jpg";
+import img4 from "../../assets/slider/TB6.jpg";
+import img5 from "../../assets/slider/TO1.jpg";
+import img6 from "../../assets/slider/TO2.jpg";
+import img7 from "../../assets/slider/ps21.jpg";
+import img8 from "../../assets/slider/ps26.jpg";
+
 import {
   BsChevronCompactLeft,
   BsChevronCompactRight,
@@ -63,6 +67,15 @@ const Slider = () => {
     },
     {
       url: img5,
+    },
+    {
+      url: img6,
+    },
+    {
+      url: img7,
+    },
+    {
+      url: img8,
     },
   ];
 
