@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-center flex-col mt-8 border-t-1 border-pink">
       <div className="flex items-center justify-center flex-col mt-6 ">
-        <h4 className="text-[30px] text-primary">
+        <h4 className=" text-[24px] lg:text-[30px] text-primary">
           OXDoor – THẾ GIỚI CỬA NHỰA ĐÀ NẴNG
         </h4>
         <span className="hidden lg:block text-[20px] mt-2">
