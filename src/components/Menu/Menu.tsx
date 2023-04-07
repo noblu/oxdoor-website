@@ -171,7 +171,7 @@ const Menu = () => {
                 <div className="mt-1">
                   <button
                     onClick={() => setOpen(!open)}
-                    className="inline-flex items-center justify-center pr-2 md:pr-8 lg:p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+                    className="inline-flex items-center justify-center md:pr-8 lg:p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
                     x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
                     x-bind:aria-expanded="open"
                   >
@@ -183,7 +183,7 @@ const Menu = () => {
                   </button>
                 </div>
                 <div>
-                  <span className="text-[16px] md:text-[24px] lg:text-xl">
+                  <span className="text-[14px] md:text-[24px] lg:text-xl pl-2">
                     Sản Phẩm Bền Đẹp, Vững Chắc Cho Ngôi Nhà Của Bạn
                   </span>
                 </div>

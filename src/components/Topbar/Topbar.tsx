@@ -10,7 +10,7 @@ const Topbar = () => {
         <HiOutlineMail className="mr-1" /> OXDoor.VN@gmail.com
       </span>
       <span className="flex items-center text-[16px] sm:text-[17px] md:text-xl">
-        <BsTelephoneFill className="mr-1" /> HOTLINE : 0905695856 - 0975317123
+        <BsTelephoneFill className="mr-1" />: 0905695856 - 0975317123
       </span>
     </div>
   );
