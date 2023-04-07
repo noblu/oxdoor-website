@@ -26,7 +26,7 @@ const Navbar = () => {
           >
             <img className="img-navbar" src={item.picture} alt="" />
             <button className="hidden absolute top-[40%] left-[50%] border-solid border-1 border-pink">
-              <a href="#">Chi tiết</a>
+              <Link to="#">Chi tiết</Link>
             </button>
             <div className="flex items-center justify-center flex-col mt-2">
               <span className="text-[20px] text-dark">{item.title}</span>

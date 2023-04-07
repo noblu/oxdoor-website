@@ -1,6 +1,6 @@
 import React from 'react'
-import ItemProduct from '../components/ItemProduct/ItemProduct'
-import { dataDL } from '../types/products'
+import ItemProduct from '../../components/ItemProduct/ItemProduct'
+import { dataDL } from '../../types/products'
 
 const Products = () => {
    

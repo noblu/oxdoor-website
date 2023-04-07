@@ -16,60 +16,72 @@ import Accessory from "../components/Navbar/components/Accessory";
 import PlasticSheet from "../components/Navbar/components/PlasticSheet";
 import Layout from "../components/Navbar/Layout";
 import Navbar from "../components/Navbar/components/Navbar";
+import LayoutProduct from "../pages/components/LayoutProduct";
+import Products from "../pages/components/Products";
 
 export const MainRoutes = () => {
-  const param = useParams();
+ 
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Home />,
       children: [
         {
-          path: "products/dewoo",
-          element: <Dewoo />,
+          path: "/",
+          element: <LayoutProduct />,
+          children: [
+            {
+              path: "/",
+              element: <Products />,
+            },
+            {
+              path: "products/dewoo",
+              element: <Dewoo />,
+            },
+            {
+              path: "products/sbsdoor",
+              element: <SBSDoor />,
+            },
+            {
+              path: "products/abs",
+              element: <ABS />,
+            },
+            {
+              path: "products/kosdoor",
+              element: <Kosdoor />,
+            },
+            {
+              path: "products/dai-loan",
+              element: <Taiwan />,
+            },
+          ],
         },
+
         {
-          path: "products/sbsdoor",
-          element: <SBSDoor />,
-        },
-        {
-          path: "products/abs",
-          element: <ABS />,
-        },
-        {
-          path: "products/kosdoor",
-          element: <Kosdoor />,
-        },
-        {
-          path: "products/dai-loan",
-          element: <Taiwan />,
-        },
-        {
-          path:'/',
+          path: "/",
           element: <Layout />,
           children: [
-        {
-          path: "",
-          element: <Navbar />,
-        },
-        {
-          path: "types/kitchen",
-          element: <Kitchen />,
-        },
-        {
-          path: "types/plasticsheet",
-          element: <PlasticSheet />,
-        },
-        {
-          path: "types/accessory",
-          element: <Accessory />,
+            {
+              path: "/",
+              element: <Navbar />,
+            },
+            {
+              path: "types/kitchen",
+              element: <Kitchen />,
+            },
+            {
+              path: "types/plasticsheet",
+              element: <PlasticSheet />,
+            },
+            {
+              path: "types/accessory",
+              element: <Accessory />,
+            },
+          ],
         },
       ],
     },
-      ],
-      
-    },
-   
+
     {
       path: "picture",
       element: <h1>picture</h1>,
