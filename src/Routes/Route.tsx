@@ -34,23 +34,23 @@ export const MainRoutes = () => {
               element: <Products />,
             },
             {
-              path: "products/dewoo",
+              path: "/products/dewoo",
               element: <Dewoo />,
             },
             {
-              path: "products/sbsdoor",
+              path: "/products/sbsdoor",
               element: <SBSDoor />,
             },
             {
-              path: "products/abs",
+              path: "/products/abs",
               element: <ABS />,
             },
             {
-              path: "products/kosdoor",
+              path: "/products/kosdoor",
               element: <Kosdoor />,
             },
             {
-              path: "products/dai-loan",
+              path: "/products/dai-loan",
               element: <Taiwan />,
             },
           ],
