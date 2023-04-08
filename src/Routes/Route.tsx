@@ -20,7 +20,6 @@ import LayoutProduct from "../pages/components/LayoutProduct";
 import Products from "../pages/components/Products";
 
 export const MainRoutes = () => {
- 
   const router = createBrowserRouter([
     {
       path: "/",
@@ -80,15 +79,6 @@ export const MainRoutes = () => {
           ],
         },
       ],
-    },
-
-    {
-      path: "picture",
-      element: <h1>picture</h1>,
-    },
-    {
-      path: "price-quotation",
-      element: <h1>báo giá</h1>,
     },
     {
       path: "admin",

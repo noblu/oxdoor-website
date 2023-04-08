@@ -6,17 +6,17 @@ import img4 from "../assets/cửa-nhựa-ABS-hàn-quốc/h6.jpg";
 export const Item = [
   {
     name: "Cửa nhựa OXDoor",
-    link: "products/dewoo",
+    link: "/products/dewoo",
     // text: "ODW",
   },
   {
     name: "Cửa nhựa Composite SBSDOOR",
-    link: "products/sbsdoor",
+    link: "/products/sbsdoor",
     // text: "OSBS",
   },
   {
     name: "Cửa nhựa OXDoor Hàn Quốc",
-    link: "products/abs",
+    link: "/products/abs",
     // text: "OHQ",
   },
   {
@@ -26,7 +26,7 @@ export const Item = [
   },
   {
     name: "Cửa nhựa Đài Loan ",
-    link: "products/dai-loan",
+    link: "/products/dai-loan",
     // text: "OTW",
   },
 ];
