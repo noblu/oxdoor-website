@@ -21,7 +21,7 @@ export const Item = [
   },
   {
     name: "Cửa nhựa OXDoor Kosdoor",
-    link: "products/kosdoor",
+    link: "/products/kosdoor",
     // text: "OKOS",
   },
   {
